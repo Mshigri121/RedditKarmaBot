@@ -4,7 +4,7 @@ while True:
     try:
         user = input("Enter first reddit username: ")
         print("Reddit username 1 is: " + user)
-        staticuser = "glucosegains"
+        staticuser = "user1"
         user_url = f"https://old.reddit.com/user/{user}.json"
         user_dict = requests.get(user_url, headers={'User-agent': 'm0'}).json()
         upvote = user_dict["data"]["children"][0]["data"]["ups"]
