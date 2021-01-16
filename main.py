@@ -18,7 +18,7 @@ while True:
     try:
         user2 = input("Enter second reddit username: ")
         print("Reddit username 2 is: " + user2)
-        staticuser2 = "helptraviecode"
+        staticuser2 = "user2"
         user_url2 = f"https://old.reddit.com/user/{user2}.json"
         user_dict2 = requests.get(user_url2, headers={'User-agent': 'm0'}).json()
         upvote2 = user_dict2["data"]["children"][0]["data"]["ups"]
